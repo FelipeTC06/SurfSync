@@ -4,7 +4,7 @@ export const APP_ROUTES: Routes = [
   {
     path: '',
     loadComponent: () =>
-      import('./components/layout/layout.component').then(c => c.LayoutComponent),
+      import('./components/ui/layout/layout.component').then(c => c.LayoutComponent),
   },
   {
     path: 'dashboard',
