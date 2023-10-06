@@ -1,0 +1,13 @@
+.header-infos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .user {
+        width: 100%;
+    }
+
+    .day-month {
+        width: 100%;
+    }
+}
