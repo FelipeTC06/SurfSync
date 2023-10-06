@@ -3,11 +3,18 @@
     display: flex;
     flex-direction: column;
 
-    .user {
-        width: 100%;
-    }
-
     .day-month {
         width: 100%;
+        font-size: 0.6rem;
+        
+        .span-date {
+            color: #b6b6b6;
+        }
     }
+
+    .user {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+
 }

@@ -3,6 +3,7 @@
 
 * {
     font-family: 'roboto', sans-serif;
+	color: #fff;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -21,4 +22,8 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
+}
+
+body {
+    min-height: 100vh;
 }
