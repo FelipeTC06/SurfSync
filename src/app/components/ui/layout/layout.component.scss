@@ -1,5 +1,18 @@
 .layout {
-    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 90%;
+    height: 100vh;
     padding: 1rem;
     background-color: #100F14;
+}
+
+.all-header {
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+}
+
+.all-body {
+    grid-row: 2;
 }
