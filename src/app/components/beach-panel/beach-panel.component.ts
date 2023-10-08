@@ -12,6 +12,8 @@ import { LayoutComponent } from "../ui/layout/layout.component";
 })
 export class BeachPanelComponent {
 
+  public classeIcone: string = 'bi-star';
+
   public imageCloudRain!: SafeResourceUrl;
   public imageMoonCloudBolt!: SafeResourceUrl;
   public imageSunCloud!: SafeResourceUrl;
@@ -32,6 +34,10 @@ export class BeachPanelComponent {
     this.imageWind = this.sanitizer.bypassSecurityTrustResourceUrl('./assets/images/weather icons/wind.png');
     this.imageMareAlta = this.sanitizer.bypassSecurityTrustResourceUrl('./assets/images/weather icons/mare-alta.png');
     this.imageMareBaixa = this.sanitizer.bypassSecurityTrustResourceUrl('./assets/images/weather icons/mare-baixa.png');
+  }
+
+  public alternarClasseIcone() {
+    this.classeIcone = this.classeIcone === 'bi-star' ? 'bi-star-fill' : 'bi-star';
   }
   
 }

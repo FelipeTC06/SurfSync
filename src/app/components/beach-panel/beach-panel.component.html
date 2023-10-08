@@ -3,7 +3,10 @@
         <div class="info-local">
             <div class="local-name">
                 <span class="span-city">Cabo Frio, Brasil</span>
-                <span class="span-beach">Foguete</span>
+                <span class="span-beach">
+                    Foguete
+                    <i class="fav-icon" [ngClass]="classeIcone" (click)="alternarClasseIcone()"></i>
+                </span>
             </div>
             <div class="image-info">
                 <img [src]="imageSunCloud" alt="img">

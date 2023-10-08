@@ -2,7 +2,8 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    gap: 2rem;
 
     .info-local {
         display: flex;
@@ -18,6 +19,12 @@
             .span-city {
                 font-size: 0.7rem;
                 color: #b6b6b6;
+            }
+            
+            .span-beach {
+                .fav-icon {
+                    cursor: pointer;
+                }
             }
         }
     
@@ -57,7 +64,7 @@
 
         .card-info {
             width: 5rem;
-            height: 8rem;
+            height: 7rem;
             background-color: #1D1D33;
             padding: 0.5rem;
             border-radius: 0.8rem;
