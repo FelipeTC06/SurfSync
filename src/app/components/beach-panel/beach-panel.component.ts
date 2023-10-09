@@ -12,6 +12,9 @@ import { LayoutComponent } from "../ui/layout/layout.component";
 })
 export class BeachPanelComponent {
 
+
+  public selectedTab: string = 'hour';
+
   public classeIcone: string = 'bi-star';
 
   public imageCloudRain!: SafeResourceUrl;
@@ -40,4 +43,9 @@ export class BeachPanelComponent {
     this.classeIcone = this.classeIcone === 'bi-star' ? 'bi-star-fill' : 'bi-star';
   }
   
+
+  public selectTab(tab: string): void {
+    this.selectedTab = tab;
+  }
+
 }

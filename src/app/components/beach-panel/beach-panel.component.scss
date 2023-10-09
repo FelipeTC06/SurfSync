@@ -4,58 +4,122 @@
     flex-direction: column;
     justify-content: flex-start;
     gap: 2rem;
+    background-color: #100F14;
+    padding: 1rem;
 
     .info-local {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 1rem;
-    
+
         .local-name {
             display: flex;
             flex-direction: column;
             align-items: center;
-    
+
             .span-city {
                 font-size: 0.7rem;
                 color: #b6b6b6;
             }
-            
+
             .span-beach {
                 .fav-icon {
                     cursor: pointer;
                 }
             }
         }
-    
+
+        .hour-day {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            align-items: center;
+
+
+            .select-switch {
+                display: flex;
+                width: 80%;
+            }
+            
+            .span-switch {
+                width: 50%;
+                text-align: center;
+                border-bottom: 1px solid #ffffff3b;
+                cursor: pointer;
+            }
+            
+            .span-switch.selected {
+                border-bottom: 1px solid #fff; 
+            }
+
+            .select-info {
+                width: 100%;
+                display: flex;
+                gap: 0.5rem;
+                overflow-x: auto;
+
+                .select-card {
+                    width: 20%;
+                    height: 6.5rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 0.5rem;
+                    border: 0.5px solid #fff;
+                    border-radius: 4rem;
+                    justify-content: space-evenly;
+
+                    .select-hour {
+                        font-size: 0.9rem;
+                    }
+
+
+                    .select-icon {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        gap: 0.2rem;
+
+                        .icon-span {
+                            font-size: 0.7rem;
+                        }
+                    }
+                }
+            }
+        }
+
+
         .image-info {}
-    
+
         .temp-info {
             font-weight: bold;
-    
+
             .span-temp {
                 font-size: 2.5rem;
             }
-    
+
             .span-scale {
                 font-size: 1.5rem
             }
         }
-    
+
         .others-info {
             width: 100%;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
-    
+
             .others {
                 display: flex;
                 flex-direction: row;
                 gap: 0.4rem;
             }
         }
-    
+
     }
+
     .cards-group {
         display: flex;
         flex-direction: row;

@@ -1,54 +1,149 @@
-<app-layout>
-    <div class="panel-body">
-        <div class="info-local">
-            <div class="local-name">
-                <span class="span-city">Cabo Frio, Brasil</span>
-                <span class="span-beach">
-                    Foguete
-                    <i class="fav-icon" [ngClass]="classeIcone" (click)="alternarClasseIcone()"></i>
-                </span>
+<div class="panel-body">
+    <div class="info-local">
+        <div class="local-name">
+            <span class="span-city">Cabo Frio, Brasil</span>
+            <span class="span-beach">
+                Foguete
+                <i class="fav-icon" [ngClass]="classeIcone" (click)="alternarClasseIcone()"></i>
+            </span>
+        </div>
+        <div class="hour-day">
+            <div class="select-switch">
+                <span class="span-switch" [class.selected]="selectedTab === 'hour'" (click)="selectTab('hour')">Select hour</span>
+                <span class="span-switch" [class.selected]="selectedTab === 'day'" (click)="selectTab('day')">Select day</span>
             </div>
-            <div class="image-info">
-                <img [src]="imageSunCloud" alt="img">
-            </div>
-            <div class="temp-info">
-                <span class="span-temp">29</span>
-                <span class="span-scale">&#8451;</span>
-            </div>
-            <div class="others-info">
-                <div class="others">
-                    <i class="bi bi-wind"></i>
-                    <span>11Km/h</span>
+            <div class="select-info">
+                <div class="select-card">
+                    <span class="select-hour">00 h</span>
+                    <div class="select-icon">
+                        <i class="bi bi-tsunami"></i>
+                        <span class="icon-span">L</span>
+                    </div>
+                    <div class="select-icon">
+                        <i class="bi bi-wind"></i>
+                        <span class="icon-span">SW</span>
+                    </div>
                 </div>
-                <div class="others">
-                    <i class="bi bi-tsunami"></i>
-                    <span>1.5M</span>
+                <div class="select-card">
+                    <span class="select-hour">01 h</span>
+                    <div class="select-icon">
+                        <i class="bi bi-tsunami"></i>
+                        <span class="icon-span">L</span>
+                    </div>
+                    <div class="select-icon">
+                        <i class="bi bi-wind"></i>
+                        <span class="icon-span">SW</span>
+                    </div>
                 </div>
-                <div class="others">
-                    <i class="bi bi-brightness-high"></i>
-                    <span>8h</span>
+                <div class="select-card">
+                    <span class="select-hour">02 h</span>
+                    <div class="select-icon">
+                        <i class="bi bi-tsunami"></i>
+                        <span class="icon-span">L</span>
+                    </div>
+                    <div class="select-icon">
+                        <i class="bi bi-wind"></i>
+                        <span class="icon-span">SW</span>
+                    </div>
+                </div>
+                <div class="select-card">
+                    <span class="select-hour">03 h</span>
+                    <div class="select-icon">
+                        <i class="bi bi-tsunami"></i>
+                        <span class="icon-span">L</span>
+                    </div>
+                    <div class="select-icon">
+                        <i class="bi bi-wind"></i>
+                        <span class="icon-span">SW</span>
+                    </div>
+                </div>
+                <div class="select-card">
+                    <span class="select-hour">04 h</span>
+                    <div class="select-icon">
+                        <i class="bi bi-tsunami"></i>
+                        <span class="icon-span">L</span>
+                    </div>
+                    <div class="select-icon">
+                        <i class="bi bi-wind"></i>
+                        <span class="icon-span">SW</span>
+                    </div>
+                </div>
+                <div class="select-card">
+                    <span class="select-hour">05 h</span>
+                    <div class="select-icon">
+                        <i class="bi bi-tsunami"></i>
+                        <span class="icon-span">L</span>
+                    </div>
+                    <div class="select-icon">
+                        <i class="bi bi-wind"></i>
+                        <span class="icon-span">SW</span>
+                    </div>
+                </div>
+                <div class="select-card">
+                    <span class="select-hour">06 h</span>
+                    <div class="select-icon">
+                        <i class="bi bi-tsunami"></i>
+                        <span class="icon-span">L</span>
+                    </div>
+                    <div class="select-icon">
+                        <i class="bi bi-wind"></i>
+                        <span class="icon-span">SW</span>
+                    </div>
+                </div>
+                <div class="select-card">
+                    <span class="select-hour">07 h</span>
+                    <div class="select-icon">
+                        <i class="bi bi-tsunami"></i>
+                        <span class="icon-span">L</span>
+                    </div>
+                    <div class="select-icon">
+                        <i class="bi bi-wind"></i>
+                        <span class="icon-span">SW</span>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="cards-group">
-            <div class="card-info">
-                <img [src]="imageWind" class="card-info-img" alt="...">
-                <div class="text">
-                    <p class="">Lest</p>
-                </div>
+
+        <div class="image-info">
+            <img [src]="imageSunCloud" alt="img">
+        </div>
+        <div class="temp-info">
+            <span class="span-temp">29</span>
+            <span class="span-scale">&#8451;</span>
+        </div>
+        <div class="others-info">
+            <div class="others">
+                <i class="bi bi-wind"></i>
+                <span>11Km/h</span>
             </div>
-            <div class="card-info">
-                <img [src]="imageMareAlta" class="card-info-img" alt="...">
-                <div class="text">
-                    <p class="">11 H</p>
-                </div>
+            <div class="others">
+                <i class="bi bi-tsunami"></i>
+                <span>1.5M</span>
             </div>
-            <div class="card-info">
-                <img [src]="imageMareBaixa" class="card-info-img" alt="...">
-                <div class="text">
-                    <p class="">18 H</p>
-                </div>
+            <div class="others">
+                <i class="bi bi-brightness-high"></i>
+                <span>8h</span>
             </div>
         </div>
     </div>
-</app-layout>
+    <div class="cards-group">
+        <div class="card-info">
+            <img [src]="imageWind" class="card-info-img" alt="...">
+            <div class="text">
+                <p class="">Lest</p>
+            </div>
+        </div>
+        <div class="card-info">
+            <img [src]="imageMareAlta" class="card-info-img" alt="...">
+            <div class="text">
+                <p class="">11 H</p>
+            </div>
+        </div>
+        <div class="card-info">
+            <img [src]="imageMareBaixa" class="card-info-img" alt="...">
+            <div class="text">
+                <p class="">18 H</p>
+            </div>
+        </div>
+    </div>
+</div>
